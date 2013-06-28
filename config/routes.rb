@@ -1,4 +1,11 @@
 NavlinkApp::Application.routes.draw do
+  
+  root :to => 'static_pages#home'
+
+  match '/links', to: 'static_pages#links'
+
+  match '/signup', to: 'users#new'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
